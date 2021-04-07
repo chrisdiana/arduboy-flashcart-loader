@@ -1,6 +1,6 @@
 # Arduboy Flashcart Loader
 
-Single command index, build and upload for Arduboy FX. Utilities to make loading new game libraries onto the FX chip a little easier. Thanks to [Mr.Blinky](https://github.com/MrBlinky) for all the great work in putting together the [Arduboy Python Utilities](https://github.com/MrBlinky/Arduboy-Python-Utilities) that this package uses.
+Single command index, build and upload for the Arduboy FX. Utilities to make loading new game libraries onto the FX chip a little easier. Thanks to [Mr.Blinky](https://github.com/MrBlinky) for all the great work in putting together the [Arduboy Python Utilities](https://github.com/MrBlinky/Arduboy-Python-Utilities) that this package uses.
 
 
 ## Quick Start
@@ -38,7 +38,7 @@ $ pip install -r requirements.txt
 
 4. Connect your Arduboy FX and run the `all` command while passing the directory of your flashcart
 
-```
+```bash
 $ ./run.sh all example-flashcart/
 ```
 
