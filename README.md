@@ -24,7 +24,7 @@ $ pip install -r requirements.txt
     - - 01-Hopper.hex           # game file
     - - 01-Hopper.png           # game screen file
     - - 02-Lasers.hex
-    - - 02.Lasers.png
+    - - 02-Lasers.png
     - 02-Adventure
     - - 01-Arena.hex
     - - 01-Arena.png
