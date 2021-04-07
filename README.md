@@ -1,6 +1,6 @@
 # Arduboy Flashcart Loader
 
-Some utilities to make loading new game libraries onto the FX chip a little easier. Thanks to [Mr.Blinky](https://github.com/MrBlinky) for all the great work in putting together the [Arduboy Python Utilities](https://github.com/MrBlinky/Arduboy-Python-Utilities) that this package uses.
+Single command index, build and upload for Arduboy FX. Utilities to make loading new game libraries onto the FX chip a little easier. Thanks to [Mr.Blinky](https://github.com/MrBlinky) for all the great work in putting together the [Arduboy Python Utilities](https://github.com/MrBlinky/Arduboy-Python-Utilities) that this package uses.
 
 
 ## Quick Start
