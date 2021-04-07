@@ -1,36 +1,23 @@
-# arduboy-flashcart-loader
+# Arduboy Flashcart Loader
 
-### Install Dependencies
+Some utilities to make loading new game libraries onto the FX chip a little easier. Thanks to [Mr.Blinky](https://github.com/MrBlinky) for all the great work in putting together the [Arduboy Python Utilities](https://github.com/MrBlinky/Arduboy-Python-Utilities) that this package uses.
 
-```
-pip install -r requirements.txt
-```
 
-1. Generate a new cart index file
+## Quick Start
 
-```
-python manage/generate_flashcart_bin.py custom-flashcart/
-```
-
-2. Generate a new image file
+1. Clone the repo
 
 ```
-python manage/flashcart-builder.py custom-flashcart/flashcart-index.csv
+$ git clone --recursive git@github.com:chrisdiana/arduboy-flashcart-loader.git
 ```
 
-3. Load the image onto the Arduboy
+2. Install dependencies
 
 ```
-$ python manage/flashcart-writer.py custom-flashcart/flashcart-image.bin
+$ pip install -r requirements.txt
 ```
 
-Generate flashcart bin file
-
-```
-$ python generate_flashcart_bin.py <flashcart_directory_path>
-```
-
-Follow this directory structure when setting up your flashcart directory:
+3. Setup your game library using the `example-flashcart` directory as a template. Follow the directory structure below:
 
 ```
     - 01-Action
@@ -48,3 +35,44 @@ Follow this directory structure when setting up your flashcart directory:
     - flashcart-image.bin       # flash cart image
     - flashcart-index.csv       # flash card index directory needed to build image
 ```
+
+4. Connect your Arduboy FX and run the `all` command while passing the directory of your flashcart
+
+```
+$ ./run.sh all example-flashcart/
+```
+
+
+## Run commands standalone
+
+Generate the flashcart index file
+
+```
+$ ./run.sh index example-flashcart/
+
+OR
+
+$ python src/generate_flashcart_bin.py example-flashcart/
+```
+
+Generate the flashcart image bin file
+
+```
+$ ./run.sh build example-flashcart/
+
+OR
+
+$ python Arduboy-Python-Utilities/flashcart-builder.py example-flashcart/flashcart-index.csv
+```
+
+Load the image onto the Arduboy
+
+```
+$ ./run.sh write example-flashcart/
+
+OR
+
+$ python Arduboy-Python-Utilities/flashcart-writer.py example-flashcart/flashcart-image.bin
+```
+
+

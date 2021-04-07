@@ -14,12 +14,12 @@ Follow this directory structure:
     - 02-Adventure
     - - 01-Arena.hex
     - - 01-Arena.png
-    - Categories		# category screens directory
+    - Categories				# category screens directory
     - - 01-Action.png 	        # category screen file
-    - - 02-Adventure.png 	# category screen file
-    - arduboy_loader.png 	# title screen
-    - flashcart-image.bin 	# flash cart image
-    - flashcart-index.csv	# flash card index directory needed to build image
+    - - 02-Adventure.png 		# category screen file
+    - arduboy_loader.png 		# title screen
+    - flashcart-image.bin 		# flash cart image
+    - flashcart-index.csv		# flash card index directory needed to build image
 
 """
 import os
